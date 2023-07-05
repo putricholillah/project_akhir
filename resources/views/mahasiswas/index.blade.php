@@ -30,6 +30,7 @@
                             <th class="px-4 py-2 border">Kota</th>
                             <th class="px-4 py-2 border">Kelas</th>
                             <th class="px-4 py-2 border">Jurusan</th>
+                            <th class="px-4 py-2 border">Foto</th>
                             <th class="px-4 py-2 border">Action</th>
                         </tr>
                     </thead>
@@ -44,6 +45,9 @@
                                     <td class="px-4 py-2 border">{{ $row->kota }}</td>
                                     <td class="px-4 py-2 border">{{ $row->kelas }}</td>
                                     <td class="px-4 py-2 border">{{ $row->jurusan }}</td>
+                                    <td class="px-4 py-2 border">
+                                        <img src="{{ asset('/storage/mahasiswas/'.$row->image) }}" class="rounded" style="width: 80px">
+                                    </td>
                                     <td class="px-4 py-2 border">
                                         <form action="{{ route('mahasiswas.destroy', $row->id) }}" method="POST">
                                             <a href="{{ route('mahasiswas.show', $row->id) }}" class="inline-flex items-center px-4 py-2 mx-2 text-xs font-semibold tracking-widest text-white uppercase transition duration-150 ease-in-out bg-gray-800 border border-transparent rounded-md hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25">

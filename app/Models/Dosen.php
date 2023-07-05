@@ -15,6 +15,7 @@ class Dosen extends Model
         'nama', 
         'email', 
         'alamat', 
-        'kota'
+        'kota',
+        'image'
        ];
 }

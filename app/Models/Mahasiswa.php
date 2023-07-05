@@ -17,6 +17,7 @@ class Mahasiswa extends Model
         'alamat', 
         'kota', 
         'kelas', 
-        'jurusan'
+        'jurusan',
+        'image'
        ];
 }

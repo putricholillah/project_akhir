@@ -41,6 +41,12 @@
                             <td class="px-4 py-2 font-bold">Jurusan</td>
                             <td>{{ $mahasiswa->jurusan }}</td>
                         </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-bold">Foto</td>
+                            <td>
+                            <img src="{{ asset('/storage/mahasiswas/'.$mahasiswa->image) }}" class="rounded" style="width: 150px">
+                            </td>
+                        </tr>
 
                     </tbody>
                 </table>

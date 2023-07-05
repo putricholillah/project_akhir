@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('kota');
             $table->string('kelas');
             $table->string('jurusan');
+            $table->string('image');
             $table->timestamps();
         });
     }
